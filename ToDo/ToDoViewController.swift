@@ -20,6 +20,7 @@ class ToDoViewController: UIViewController, UITextFieldDelegate {
     
     
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -46,12 +47,8 @@ class ToDoViewController: UIViewController, UITextFieldDelegate {
 
         //入力内容を変数に格納、その後フィールドを空にする
         todoTitle.append(titleTextField.text!)
-        titleTextField.text=""
+        titleTextField.text = ""
         
-        //日付の表示を変更
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy/MM/dd"
-        dateTextField.text = "\(formatter.string(from: Date()))"
         
         
         //userDefaultsへ書込
