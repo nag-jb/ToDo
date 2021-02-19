@@ -15,6 +15,7 @@
 		1A7F72F525DEC59D00C700D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A7F72F325DEC59D00C700D0 /* LaunchScreen.storyboard */; };
 		1A7F730025DEC59D00C700D0 /* ToDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7F72FF25DEC59D00C700D0 /* ToDoTests.swift */; };
 		1A7F730B25DEC59D00C700D0 /* ToDoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7F730A25DEC59D00C700D0 /* ToDoUITests.swift */; };
+		1A7F731C25DEDC7000C700D0 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7F731B25DEDC7000C700D0 /* ToDoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		1A7F730625DEC59D00C700D0 /* ToDoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A7F730A25DEC59D00C700D0 /* ToDoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoUITests.swift; sourceTree = "<group>"; };
 		1A7F730C25DEC59D00C700D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A7F731B25DEDC7000C700D0 /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				1A7F72F125DEC59D00C700D0 /* Assets.xcassets */,
 				1A7F72F325DEC59D00C700D0 /* LaunchScreen.storyboard */,
 				1A7F72F625DEC59D00C700D0 /* Info.plist */,
+				1A7F731B25DEDC7000C700D0 /* ToDoViewController.swift */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A7F731C25DEDC7000C700D0 /* ToDoViewController.swift in Sources */,
 				1A7F72ED25DEC59C00C700D0 /* ViewController.swift in Sources */,
 				1A7F72E925DEC59C00C700D0 /* AppDelegate.swift in Sources */,
 				1A7F72EB25DEC59C00C700D0 /* SceneDelegate.swift in Sources */,
