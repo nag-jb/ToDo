@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 //UITextFieldDelegate : TextFieldの編集やバリデーションを行いたい時に用いるメソッドの集まり
 class ToDoViewController: UIViewController, UITextFieldDelegate {
     
@@ -17,8 +18,6 @@ class ToDoViewController: UIViewController, UITextFieldDelegate {
     
     //ユーザデフォルトにアクセスするための倉庫を作成
     var saveDate: UserDefaults = UserDefaults.standard
-    
-    
 
     
     override func viewDidLoad() {
@@ -29,13 +28,10 @@ class ToDoViewController: UIViewController, UITextFieldDelegate {
         datePicker.preferredDatePickerStyle = .wheels
         //dateTextField.inputView = datePicker
         
-        
         //Delegate機能の実装(デリゲートの所在はこのファイルですよ)
         titleTextField.delegate = self
         
-        //userDefaultsから読込
-        titleTextField.text = saveDate.object(forKey: "title") as? String
-        //datePicker.text = saveDate.object(forKey: "date") as? String
+        print("f")
 
         // Do any additional setup after loading the view.
     }
@@ -45,20 +41,30 @@ class ToDoViewController: UIViewController, UITextFieldDelegate {
     //保存機能
     @IBAction func save(_ sender: Any){
 
-        //入力内容を変数に格納、その後フィールドを空にする
+        
+        //項目名を変数に格納、その後フィールドを空にする
         todoTitle.append(titleTextField.text!)
         titleTextField.text = ""
-        
+
+        //日付を変数に格納
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy/MM/dd"
+        todoDate.append("\(formatter.string(from: Date()))")
         
         
         //userDefaultsへ書込
-        saveDate.set(titleTextField.text, forKey: "title")
+        saveDate.set(todoTitle, forKey: "title")
+        saveDate.set(todoDate, forKey: "date")
+        
         //ToDoViewController画面を閉じる
         self.dismiss(animated: true, completion: nil)
-        
-        //print(dateTextField)
-        
         print(todoTitle)
+        print(todoDate)
+        
+        
+        print("g")
+        
+        
     }
     
     
@@ -68,19 +74,21 @@ class ToDoViewController: UIViewController, UITextFieldDelegate {
         
         //ToDoViewController画面を閉じる
         self.dismiss(animated: true, completion: nil)
+        print("h")
     }
     
     
     
-    //Delegate機能
+    //キーボード非表示機能
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         //TextFieldのファーストレスポンダをやめる(キーボードが非表示になる)
         textField.resignFirstResponder()
         
+        print("i")
+        
         return true
     }
-    
     
     
 
