@@ -14,6 +14,7 @@ class ToDoViewController: UIViewController, UITextFieldDelegate {
     //ラベルの宣言
     @IBOutlet var titleTextField: UITextField!
     @IBOutlet var datePicker: UIDatePicker!
+    @IBOutlet var tebleView: UITableView!
     var dateTextField: UILabel!
     
     //ユーザデフォルトにアクセスするための倉庫を作成
@@ -71,6 +72,8 @@ class ToDoViewController: UIViewController, UITextFieldDelegate {
     
     //中断機能
     @IBAction func cancel(){
+        
+
         
         //ToDoViewController画面を閉じる
         self.dismiss(animated: true, completion: nil)

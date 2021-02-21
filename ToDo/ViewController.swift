@@ -14,13 +14,19 @@ class ViewController: UIViewController, UITableViewDataSource{
 
     @IBOutlet var table: UITableView!
     
-    
+    public func reload(){
+        table.reloadData()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        self.table.register(UINib(nibName: "TodoTableViewCell", bundle: nil), forCellReuseIdentifier: "myCell")
+        
         table.dataSource = self
+        
+        table.reloadData()
         
         if UserDefaults.standard.object(forKey: "title") != nil {
             todoTitle = UserDefaults.standard.object(forKey: "title") as! [String]
@@ -54,10 +60,13 @@ class ViewController: UIViewController, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         
         //変数を作成
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! TodoTableViewCell
+        
+        cell.titleLabel.text = todoTitle[indexPath.row]
+        cell.dateLabel.text = todoDate[indexPath.row]
         
         //変数の中身を作成、セルにToDo項目と日付を表示
-        cell.textLabel?.text = todoTitle[indexPath.row] + todoDate[indexPath.row]
+        //cell.textLabel?.text = todoTitle[indexPath.row] + todoDate[indexPath.row]
         
         print("d")
         

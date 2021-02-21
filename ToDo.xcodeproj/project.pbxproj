@@ -16,6 +16,8 @@
 		1A7F730025DEC59D00C700D0 /* ToDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7F72FF25DEC59D00C700D0 /* ToDoTests.swift */; };
 		1A7F730B25DEC59D00C700D0 /* ToDoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7F730A25DEC59D00C700D0 /* ToDoUITests.swift */; };
 		1A7F731C25DEDC7000C700D0 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7F731B25DEDC7000C700D0 /* ToDoViewController.swift */; };
+		1A7F738E25E28D2A00C700D0 /* TodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7F738C25E28D2A00C700D0 /* TodoTableViewCell.swift */; };
+		1A7F738F25E28D2A00C700D0 /* TodoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A7F738D25E28D2A00C700D0 /* TodoTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		1A7F730A25DEC59D00C700D0 /* ToDoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoUITests.swift; sourceTree = "<group>"; };
 		1A7F730C25DEC59D00C700D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A7F731B25DEDC7000C700D0 /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
+		1A7F738C25E28D2A00C700D0 /* TodoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewCell.swift; sourceTree = "<group>"; };
+		1A7F738D25E28D2A00C700D0 /* TodoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				1A7F72F325DEC59D00C700D0 /* LaunchScreen.storyboard */,
 				1A7F72F625DEC59D00C700D0 /* Info.plist */,
 				1A7F731B25DEDC7000C700D0 /* ToDoViewController.swift */,
+				1A7F738C25E28D2A00C700D0 /* TodoTableViewCell.swift */,
+				1A7F738D25E28D2A00C700D0 /* TodoTableViewCell.xib */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
@@ -237,6 +243,7 @@
 				1A7F72F525DEC59D00C700D0 /* LaunchScreen.storyboard in Resources */,
 				1A7F72F225DEC59D00C700D0 /* Assets.xcassets in Resources */,
 				1A7F72F025DEC59C00C700D0 /* Main.storyboard in Resources */,
+				1A7F738F25E28D2A00C700D0 /* TodoTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +271,7 @@
 				1A7F731C25DEDC7000C700D0 /* ToDoViewController.swift in Sources */,
 				1A7F72ED25DEC59C00C700D0 /* ViewController.swift in Sources */,
 				1A7F72E925DEC59C00C700D0 /* AppDelegate.swift in Sources */,
+				1A7F738E25E28D2A00C700D0 /* TodoTableViewCell.swift in Sources */,
 				1A7F72EB25DEC59C00C700D0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +450,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ToDo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,6 +469,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ToDo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

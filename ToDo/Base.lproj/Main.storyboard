@@ -38,7 +38,7 @@
                     <navigationItem key="navigationItem" title="ToDo" id="R9e-ye-DAA">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="u61-lU-rWT">
                             <connections>
-                                <segue destination="kjw-IP-H4k" kind="presentation" id="032-WR-Bsh"/>
+                                <segue destination="kjw-IP-H4k" kind="presentation" modalPresentationStyle="fullScreen" id="032-WR-Bsh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
