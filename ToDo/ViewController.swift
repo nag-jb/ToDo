@@ -72,8 +72,12 @@ class ViewController: UIViewController, UITableViewDataSource{
             todoTitle.remove(at: indexPath.row)
             todoDate.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath as IndexPath], with: UITableView.RowAnimation.automatic)
+            //userDefaultsへ書込
+            UserDefaults.standard.set(todoTitle, forKey: "title")
+            UserDefaults.standard.set(todoDate, forKey: "date")
         }
         
+
         print("e")
         print(todoTitle)
         print(todoDate)
